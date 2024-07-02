@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "nuxt-laravel-echo-playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate"
+  },
+  "dependencies": {
+    "nuxt": "^3.12.3"
+  }
+}

@@ -1,0 +1,71 @@
+name: Release
+
+env:
+  node_version: 20
+  changelog_user: changelog_action
+  changelog_email: artem@manchenkoff.me
+  NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+  NODE_REGISTRY: https://registry.npmjs.org/ # setup credentials for npm
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # pass token to generate changelog
+
+concurrency:
+  group: nuxt-laravel-echo-release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  id-token: write
+
+on:
+  workflow_dispatch: # manual trigger
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node_version }}
+
+      - name: Install dependencies
+        run: npx nypm@latest i
+
+      - name: Validate package
+        run: npm run validate
+
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # fetch all history for tags
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node_version }}
+
+      - name: Install dependencies
+        run: npx nypm@latest i
+
+      - name: Build
+        run: npm run prepack
+
+      - name: Generate changelog and publish release
+        run: |
+          git config --global user.name "${{ env.changelog_user }}"
+          git config --global user.email "${{ env.changelog_email }}"
+          npm run changelogen --release --push --publish

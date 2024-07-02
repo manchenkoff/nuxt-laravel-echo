@@ -1,0 +1,6 @@
+{
+  "eslint.experimental.useFlatConfig": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+}
