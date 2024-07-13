@@ -47,12 +47,15 @@
     "@nuxt/module-builder": "^0.8.1",
     "@nuxt/schema": "^3.12.3",
     "@nuxt/test-utils": "^3.13.1",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.10",
     "changelogen": "^0.5.5",
-    "eslint": "^9.6.0",
+    "eslint": "^9.7.0",
+    "laravel-echo": "^1.16.1",
     "nuxt": "^3.12.3",
+    "pusher-js": "8.4.0-rc2",
     "typescript": "latest",
     "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.24"
-  }
+    "vue-tsc": "^2.0.26"
+  },
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74"
 }
