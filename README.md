@@ -14,11 +14,12 @@ Nuxt module for Laravel Echo integration to get a seamless experience with appli
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
+- Sanctum-based authentication
+- CSRF cookie management for Private and Presence channels
+- CSR-only mode
+- TypeScript support
 
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+**Note:** Before using this module, make sure you have a [Laravel Echo](https://laravel.com/docs/11.x/broadcasting) server running and properly configured.
 
 ## Quick Setup
 
@@ -26,6 +27,21 @@ Install the module to your Nuxt application with one command:
 
 ```bash
 npx nuxi module add nuxt-laravel-echo
+```
+
+Then provide the configuration in your `nuxt.config.js`:
+
+```typescript
+export default defineNuxtConfig({
+  modules: ['nuxt-laravel-echo'],
+
+  echo: {
+    key: 'REPLACE_ME', // Your Laravel Echo app key
+    authentication: {
+      baseUrl: 'laravel.test', // Your Laravel app URL
+    },
+  },
+})
 ```
 
 That's it! You can now use Nuxt Laravel Echo in your Nuxt app ✨
