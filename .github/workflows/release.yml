@@ -38,6 +38,9 @@ jobs:
       - name: Install dependencies
         run: npx nypm@latest i
 
+      - name: Prepare stubs
+        run: pnpm dev:prepare
+
       - name: Validate package
         run: pnpm validate
 
@@ -60,6 +63,9 @@ jobs:
 
       - name: Install dependencies
         run: npx nypm@latest i
+
+      - name: Prepare stubs
+        run: pnpm dev:prepare
 
       - name: Build
         run: pnpm prepack
