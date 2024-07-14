@@ -35,6 +35,9 @@ jobs:
       - name: Lint
         run: pnpm lint
 
+      - name: Build stubs
+        run: pnpm dev:prepare
+
       - name: Type check
         run: pnpm test:types
 
@@ -55,6 +58,9 @@ jobs:
 
       - name: Install dependencies
         run: npx nypm@latest i
+
+      - name: Build stubs
+        run: pnpm dev:prepare
 
       - name: Test
         run: pnpm test
