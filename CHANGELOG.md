@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.3...v0.0.4)
+
+### 🩹 Fixes
+
+- Rolled back to pusher 8.3 ([fa42bdf](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fa42bdf))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.3
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.2...v0.0.3)
