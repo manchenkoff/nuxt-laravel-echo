@@ -33,10 +33,10 @@ jobs:
         run: npx nypm@latest i
 
       - name: Lint
-        run: npm run lint
+        run: pnpm lint
 
       - name: Type check
-        run: npm run test:types
+        run: pnpm test:types
 
   test:
     runs-on: ubuntu-latest
@@ -57,4 +57,4 @@ jobs:
         run: npx nypm@latest i
 
       - name: Test
-        run: npm run test
+        run: pnpm test
