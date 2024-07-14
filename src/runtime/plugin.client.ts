@@ -1,5 +1,4 @@
 import Echo from 'laravel-echo'
-import Pusher from 'pusher-js'
 import type { Channel, Options, ChannelAuthorizationCallback } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import { createConsola, type ConsolaInstance } from 'consola'
@@ -11,7 +10,6 @@ import { defineNuxtPlugin, createError, useCookie } from '#app'
 declare global {
   interface Window {
     Echo: Echo
-    Pusher: typeof Pusher
   }
 }
 
@@ -98,9 +96,9 @@ function prepareEchoOptions(config: ModuleOptions, logger: ConsolaInstance) {
 
   const authorizer = config.authentication
     ? createAuthorizer(
-        config.authentication as Required<Authentication>,
-        logger
-      )
+      config.authentication as Required<Authentication>,
+      logger
+    )
     : undefined
 
   // Create a Pusher instance
@@ -133,11 +131,13 @@ function prepareEchoOptions(config: ModuleOptions, logger: ConsolaInstance) {
   }
 }
 
-export default defineNuxtPlugin((_nuxtApp) => {
+export default defineNuxtPlugin(async (_nuxtApp) => {
   const config = useEchoConfig()
   const logger = createEchoLogger(config.logLevel)
 
-  window.Pusher = Pusher
+  const pusher = await import('pusher-js')
+  // @ts-expect-error Pusher is not defined on Window
+  window.Pusher = pusher.default || pusher
   window.Echo = new Echo(prepareEchoOptions(config, logger))
 
   logger.debug('Laravel Echo client initialized')
