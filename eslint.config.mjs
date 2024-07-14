@@ -13,5 +13,6 @@ export default createConfigForNuxt({
   rules: {
     '@stylistic/comma-dangle': 'off',
     '@stylistic/indent': 'off',
+    'vue/no-multiple-template-root': 'off',
   },
 })
