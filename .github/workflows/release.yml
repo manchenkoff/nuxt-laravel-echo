@@ -61,6 +61,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node_version }}
+          registry-url: ${{ env.NODE_REGISTRY }}
 
       - name: Install dependencies
         run: npx nypm@latest i
