@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Use lazy load for pusher ([3083116](https://github.com/manchenkoff/nuxt-laravel-echo/commit/3083116))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.2
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.1...v0.0.2)
