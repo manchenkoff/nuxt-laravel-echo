@@ -2,7 +2,7 @@ name: Release
 
 env:
   node_version: 20
-  changelog_user: changelog_action
+  changelog_user: Github CI
   changelog_email: artem@manchenkoff.me
   NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
   NODE_REGISTRY: https://registry.npmjs.org/ # setup credentials for npm
