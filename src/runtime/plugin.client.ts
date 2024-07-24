@@ -3,7 +3,6 @@ import type { Channel, Options, ChannelAuthorizationCallback } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import { createConsola, type ConsolaInstance } from 'consola'
 import type { FetchOptions } from 'ofetch'
-import Pusher from 'pusher-js'
 import { useEchoConfig } from './composables/useEchoConfig'
 import type { Authentication, ModuleOptions } from './types'
 import { defineNuxtPlugin, createError, useCookie } from '#app'
@@ -11,7 +10,6 @@ import { defineNuxtPlugin, createError, useCookie } from '#app'
 declare global {
   interface Window {
     Echo: Echo
-    Pusher: typeof Pusher
   }
 }
 
@@ -137,6 +135,9 @@ export default defineNuxtPlugin(async (_nuxtApp) => {
   const config = useEchoConfig()
   const logger = createEchoLogger(config.logLevel)
 
+  const Pusher = (await import('pusher-js')).default
+
+  // @ts-expect-error window has no Pusher property
   window.Pusher = Pusher
   window.Echo = new Echo(prepareEchoOptions(config, logger))
 
