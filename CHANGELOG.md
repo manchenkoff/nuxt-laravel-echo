@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.6...v0.0.7)
+
+### 🩹 Fixes
+
+- Changed pusher-js to worker mode ([1c6816e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/1c6816e))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.6
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.5...v0.0.6)
