@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.7...v0.0.8)
+
+### 🩹 Fixes
+
+- Rolled back to basic import ([fb03d75](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fb03d75))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.7
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.6...v0.0.7)
