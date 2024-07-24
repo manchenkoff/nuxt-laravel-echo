@@ -1,5 +1,5 @@
 import Echo from 'laravel-echo'
-import Pusher from 'pusher-js'
+import Pusher from 'pusher-js/dist/web/pusher'
 import type { Channel, Options, ChannelAuthorizationCallback } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import { createConsola, type ConsolaInstance } from 'consola'
