@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.5...v0.0.6)
+
 ## v0.0.5
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.4...v0.0.5)
