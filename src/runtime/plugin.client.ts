@@ -1,12 +1,14 @@
 import Echo from 'laravel-echo'
-import Pusher from 'pusher-js/dist/web/pusher'
-import type { Channel, Options, ChannelAuthorizationCallback } from 'pusher-js'
+import PusherPkg, { type Channel, type Options, type ChannelAuthorizationCallback } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import { createConsola, type ConsolaInstance } from 'consola'
 import type { FetchOptions } from 'ofetch'
 import { useEchoConfig } from './composables/useEchoConfig'
 import type { Authentication, ModuleOptions } from './types'
 import { defineNuxtPlugin, createError, useCookie } from '#app'
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Pusher = (PusherPkg as any).default || PusherPkg
 
 declare global {
   interface Window {
@@ -133,7 +135,7 @@ function prepareEchoOptions(config: ModuleOptions, logger: ConsolaInstance) {
   }
 }
 
-export default defineNuxtPlugin(async (_nuxtApp) => {
+export default defineNuxtPlugin((_nuxtApp) => {
   const config = useEchoConfig()
   const logger = createEchoLogger(config.logLevel)
 
