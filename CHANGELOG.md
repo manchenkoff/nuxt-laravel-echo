@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Import pusher on demand ([47485de](https://github.com/manchenkoff/nuxt-laravel-echo/commit/47485de))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.4
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.3...v0.0.4)
