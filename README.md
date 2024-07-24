@@ -44,6 +44,18 @@ export default defineNuxtConfig({
 })
 ```
 
+Also, to enable Dev server compatibility with Pusher, you need to add the following Vite configuration to your `nuxt.config.js`:
+
+```typescript
+export default defineNuxtConfig({
+  vite: {
+    optimizeDeps: {
+      include: ['pusher-js'],
+    },
+  },
+})
+```
+
 That's it! You can now use Nuxt Laravel Echo in your Nuxt app ✨
 
 ## Contribution
