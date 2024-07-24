@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.10
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.9...v0.0.10)
+
+### 🩹 Fixes
+
+- Added universal import for pusher module ([0061f35](https://github.com/manchenkoff/nuxt-laravel-echo/commit/0061f35))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.9
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.8...v0.0.9)
