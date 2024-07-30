@@ -7,12 +7,13 @@ export default createConfigForNuxt({
     stylistic: true,
   },
   dirs: {
-    src: ['./playground'],
+    src: ['./playground', './docs'],
   },
 }).append({
   rules: {
     '@stylistic/comma-dangle': 'off',
     '@stylistic/indent': 'off',
     'vue/no-multiple-template-root': 'off',
+    'eslintvue/multi-word-component-names': 'off',
   },
 })
