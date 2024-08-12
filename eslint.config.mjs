@@ -7,7 +7,7 @@ export default createConfigForNuxt({
     stylistic: true,
   },
   dirs: {
-    src: ['./playground', './docs'],
+    src: ['./playground'],
   },
 }).append({
   rules: {
