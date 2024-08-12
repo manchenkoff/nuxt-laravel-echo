@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.10...v0.0.11)
+
+### 🚀 Enhancements
+
+- Created nuxt content for docs ([f6c1706](https://github.com/manchenkoff/nuxt-laravel-echo/commit/f6c1706))
+
+### 📖 Documentation
+
+- Added Vite config to readme ([71a06aa](https://github.com/manchenkoff/nuxt-laravel-echo/commit/71a06aa))
+
+### 🏡 Chore
+
+- Upgraded package manager version ([eea769a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/eea769a))
+
+### 🤖 CI
+
+- Added github pages deployment workflow ([d836bdd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d836bdd))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.10
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.9...v0.0.10)
