@@ -79,7 +79,7 @@ function createAuthorizer(
           channel_name: channel.name,
         })
 
-        client(authentication.authEndpoint, {
+        client<ChannelAuthorizationData>(authentication.authEndpoint, {
           method: 'post',
           body: payload,
         })
