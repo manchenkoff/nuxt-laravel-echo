@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.12
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.11...v0.0.12)
+
+### 🏡 Chore
+
+- Upgraded dependencies ([d9d1574](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d9d1574))
+
+### 🤖 CI
+
+- Disabled docs workflow ([807625f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/807625f))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.11
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.10...v0.0.11)
