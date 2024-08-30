@@ -1,4 +1,4 @@
-name: CI
+name: Nuxt [Validate]
 
 env:
   node_version: 20
