@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v0.0.13
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.12...v0.0.13)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @nuxt/eslint-config from 0.5.4 to 0.5.5 ([87ea010](https://github.com/manchenkoff/nuxt-laravel-echo/commit/87ea010))
+- **deps-dev:** Bump vue-tsc from 2.1.2 to 2.1.4 ([d76c06f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d76c06f))
+- **deps-dev:** Bump @types/node from 22.5.1 to 22.5.2 ([163b111](https://github.com/manchenkoff/nuxt-laravel-echo/commit/163b111))
+- **deps-dev:** Bump nuxt from 3.13.0 to 3.13.1 ([3beb22e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/3beb22e))
+- **deps-dev:** Bump vue-tsc from 2.1.4 to 2.1.6 ([8f2f7b9](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8f2f7b9))
+- **deps-dev:** Bump eslint from 9.9.1 to 9.10.0 ([8d1d333](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8d1d333))
+- **deps-dev:** Bump @types/node from 22.5.2 to 22.5.4 ([ab315be](https://github.com/manchenkoff/nuxt-laravel-echo/commit/ab315be))
+- **deps-dev:** Bump vitest from 2.0.5 to 2.1.1 ([032dcff](https://github.com/manchenkoff/nuxt-laravel-echo/commit/032dcff))
+- **deps-dev:** Bump @nuxt/test-utils from 3.14.1 to 3.14.2 ([616755d](https://github.com/manchenkoff/nuxt-laravel-echo/commit/616755d))
+- **deps-dev:** Bump @nuxt/schema from 3.13.0 to 3.13.2 ([d811a30](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d811a30))
+- Upgrade nuxt dependencies ([4b5115d](https://github.com/manchenkoff/nuxt-laravel-echo/commit/4b5115d))
+
+### 🤖 CI
+
+- Added prerelease pipeline ([12bdfc0](https://github.com/manchenkoff/nuxt-laravel-echo/commit/12bdfc0))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.12
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.11...v0.0.12)
