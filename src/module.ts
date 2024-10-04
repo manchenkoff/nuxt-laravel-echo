@@ -32,6 +32,9 @@ export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: MODULE_NAME,
     configKey: 'echo',
+    compatibility: {
+      nuxt: '>=3.13.0'
+    }
   },
   defaults: defaultModuleOptions,
   setup(_options, _nuxt) {
