@@ -1,6 +1,33 @@
 # Changelog
 
 
+## v0.1.0
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.13...v0.1.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Use setter for ofetch headers ([9a0c84a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/9a0c84a))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump typescript from 5.5.4 to 5.6.2 ([b7c136e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b7c136e))
+- **deps-dev:** Bump @nuxt/devtools from 1.5.0 to 1.5.1 ([4a74c3f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/4a74c3f))
+- **deps-dev:** Bump @types/node from 22.5.5 to 22.7.4 ([eba951e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/eba951e))
+- **deps-dev:** Bump eslint from 9.11.0 to 9.11.1 ([f147c57](https://github.com/manchenkoff/nuxt-laravel-echo/commit/f147c57))
+- ⚠️  Use nuxt 3.13 compatibility level ([1db6870](https://github.com/manchenkoff/nuxt-laravel-echo/commit/1db6870))
+- **deps-dev:** Bump @nuxt/test-utils from 3.14.2 to 3.14.3 ([26201fd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/26201fd))
+- **deps-dev:** Bump eslint from 9.11.1 to 9.12.0 ([764530c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/764530c))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Use setter for ofetch headers ([9a0c84a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/9a0c84a))
+- ⚠️  Use nuxt 3.13 compatibility level ([1db6870](https://github.com/manchenkoff/nuxt-laravel-echo/commit/1db6870))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.0.13
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.12...v0.0.13)
