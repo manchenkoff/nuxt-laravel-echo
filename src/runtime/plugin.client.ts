@@ -1,11 +1,11 @@
 import Echo from 'laravel-echo'
-import PusherPkg, { type Channel, type Options, type ChannelAuthorizationCallback } from 'pusher-js'
+import PusherPkg, { type Channel, type ChannelAuthorizationCallback, type Options } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
-import { createConsola, type ConsolaInstance } from 'consola'
+import { type ConsolaInstance, createConsola } from 'consola'
 import type { FetchOptions } from 'ofetch'
 import { useEchoConfig } from './composables/useEchoConfig'
 import type { Authentication, ModuleOptions } from './types'
-import { defineNuxtPlugin, createError, useCookie } from '#app'
+import { createError, defineNuxtPlugin, useCookie } from '#app'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Pusher = (PusherPkg as any).default || PusherPkg
@@ -48,17 +48,11 @@ function createFetchClient(
       }
 
       if (!csrfToken.value) {
-        logger.warn(
-          `${authentication.csrfCookie} cookie is missing, unable to set ${authentication.csrfHeader} header`
-        )
-
+        logger.warn(`${authentication.csrfCookie} cookie is missing, unable to set ${authentication.csrfHeader} header`)
         return
       }
 
-      context.options.headers = {
-        ...context.options.headers,
-        [authentication.csrfHeader]: csrfToken.value,
-      }
+      context.options.headers.set(authentication.csrfHeader, csrfToken.value)
     },
   }
 
@@ -71,7 +65,7 @@ function createAuthorizer(
 ) {
   const client = createFetchClient(authentication, logger)
 
-  const authorizer = (channel: Channel, _: Options) => {
+  return (channel: Channel, _: Options) => {
     return {
       authorize: (socketId: string, callback: ChannelAuthorizationCallback) => {
         const payload = JSON.stringify({
@@ -90,8 +84,6 @@ function createAuthorizer(
       },
     }
   }
-
-  return authorizer
 }
 
 function prepareEchoOptions(config: ModuleOptions, logger: ConsolaInstance) {
@@ -107,7 +99,7 @@ function prepareEchoOptions(config: ModuleOptions, logger: ConsolaInstance) {
 
   // Create a Pusher instance
   if (config.broadcaster === 'pusher') {
-    if (forceTLS === false) {
+    if (!forceTLS) {
       throw createError('Pusher requires a secure connection (schema: "https")')
     }
 

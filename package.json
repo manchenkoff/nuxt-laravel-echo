@@ -42,6 +42,7 @@
     "@nuxt/kit": "^3.13.0",
     "defu": "^6.1.4",
     "laravel-echo": "^1.16.1",
+    "ofetch": "^1.4.0",
     "pusher-js": "8.4.0-rc2"
   },
   "devDependencies": {
