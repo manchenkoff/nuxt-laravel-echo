@@ -19,6 +19,7 @@ const defaultModuleOptions: ModuleOptions = {
   scheme: 'https',
   transports: ['ws', 'wss'],
   authentication: {
+    mode: 'cookie',
     baseUrl: 'http://localhost:80',
     authEndpoint: '/broadcasting/auth',
     csrfEndpoint: '/sanctum/csrf-cookie',

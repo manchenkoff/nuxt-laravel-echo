@@ -36,7 +36,7 @@ function createFetchClient(
 
     async onRequest(context) {
       // todo: move this to interceptors
-      if (authentication.mode === 'token') {
+      if (authentication.mode === 'cookie') {
         let csrfToken = readCsrfCookie(authentication.csrfCookie)
 
         if (!csrfToken.value) {
