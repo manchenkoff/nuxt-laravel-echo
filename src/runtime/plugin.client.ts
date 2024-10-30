@@ -35,24 +35,34 @@ function createFetchClient(
     retry: false,
 
     async onRequest(context) {
-      let csrfToken = readCsrfCookie(authentication.csrfCookie)
+      // todo: move this to interceptors
+      if (authentication.mode === 'token') {
+        let csrfToken = readCsrfCookie(authentication.csrfCookie)
 
-      if (!csrfToken.value) {
-        await $fetch(authentication.csrfEndpoint, {
-          baseURL: authentication.baseUrl,
-          credentials: 'include',
-          retry: false,
-        })
+        if (!csrfToken.value) {
+          await $fetch(authentication.csrfEndpoint, {
+            baseURL: authentication.baseUrl,
+            credentials: 'include',
+            retry: false,
+          })
 
-        csrfToken = readCsrfCookie(authentication.csrfCookie)
+          csrfToken = readCsrfCookie(authentication.csrfCookie)
+        }
+
+        if (!csrfToken.value) {
+          logger.warn(`${authentication.csrfCookie} cookie is missing, unable to set ${authentication.csrfHeader} header`)
+          return
+        }
+
+        context.options.headers.set(authentication.csrfHeader, csrfToken.value)
       }
 
-      if (!csrfToken.value) {
-        logger.warn(`${authentication.csrfCookie} cookie is missing, unable to set ${authentication.csrfHeader} header`)
-        return
+        // todo: move this to interceptors
+      if (authentication.mode === 'token') {
+        const { tokenStorage } = useAppConfig().echo.authentication
+        const token = await tokenStorage.get()
+        context.options.headers.set('Authorization', 'Bearer ' + token)
       }
-
-      context.options.headers.set(authentication.csrfHeader, csrfToken.value)
     },
   }
 
@@ -127,9 +137,32 @@ function prepareEchoOptions(config: ModuleOptions, logger: ConsolaInstance) {
   }
 }
 
-export default defineNuxtPlugin((_nuxtApp) => {
+async function setupDefaultTokenStorage(nuxtApp: NuxtApp, logger: ConsolaInstance) {
+  logger.debug(
+    'Token storage is not defined, switch to default cookie storage',
+  )
+
+  const defaultStorage = await import('./storages/cookieTokenStorage')
+
+  nuxtApp.runWithContext(() => {
+    updateAppConfig({
+      echo: {
+        authentication: {
+          tokenStorage: defaultStorage.cookieTokenStorage,
+        }
+      },
+    })
+  })
+}
+
+export default defineNuxtPlugin(async (_nuxtApp) => {
   const config = useEchoConfig()
+  const appConfig = useAppConfig()
   const logger = createEchoLogger(config.logLevel)
+
+  if (config.authentication?.mode === 'token' && !appConfig.echo?.authentication?.tokenStorage) {
+    await setupDefaultTokenStorage(_nuxtApp, logger)
+  }
 
   window.Pusher = Pusher
   window.Echo = new Echo(prepareEchoOptions(config, logger))

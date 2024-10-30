@@ -1,5 +1,10 @@
 export interface Authentication {
   /**
+   * Authentication mode 'cookie' or 'token'
+   * @default 'cookie'
+   */
+  mode: 'cookie' | 'token'
+  /**
    * The base URL of Laravel application.
    * @default 'http://localhost:80'
    */
@@ -85,4 +90,15 @@ export interface ModuleOptions {
    * @default undefined
    */
   properties?: object
+}
+
+export interface TokenStorage {
+  /**
+   * Function to load a token from the storage.
+   */
+  get: (app: NuxtApp) => Promise<string | undefined>
+  /**
+   * Function to save a token to the storage.
+   */
+  set: (app: NuxtApp, token?: string) => Promise<void>
 }
