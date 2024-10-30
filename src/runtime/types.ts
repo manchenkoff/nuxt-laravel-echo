@@ -29,6 +29,10 @@ export interface Authentication {
    * @default 'X-XSRF-TOKEN'
    */
   csrfHeader?: string
+  /**
+   * Token storage handlers to be used by the client.
+   */
+  tokenStorage?: TokenStorage
 }
 
 export interface ModuleOptions {
