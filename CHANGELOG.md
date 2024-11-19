@@ -1,6 +1,44 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.1.0...v0.2.0)
+
+### 🩹 Fixes
+
+- ⚠️  New laravel-echo typing system ([113e962](https://github.com/manchenkoff/nuxt-laravel-echo/commit/113e962))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @nuxt/devtools from 1.5.2 to 1.6.0 ([b8fb7c7](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b8fb7c7))
+- **deps-dev:** Bump vitest from 2.1.2 to 2.1.3 ([8b4c78d](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8b4c78d))
+- **deps-dev:** Bump @types/node from 22.7.4 to 22.7.7 ([42915b8](https://github.com/manchenkoff/nuxt-laravel-echo/commit/42915b8))
+- **deps-dev:** Bump @nuxt/eslint-config from 0.5.7 to 0.6.0 ([794b98b](https://github.com/manchenkoff/nuxt-laravel-echo/commit/794b98b))
+- **deps-dev:** Bump eslint from 9.12.0 to 9.13.0 ([e79e738](https://github.com/manchenkoff/nuxt-laravel-echo/commit/e79e738))
+- **deps-dev:** Bump typescript from 5.5.4 to 5.6.3 ([81f2ae6](https://github.com/manchenkoff/nuxt-laravel-echo/commit/81f2ae6))
+- **deps-dev:** Bump @nuxt/test-utils from 3.14.3 to 3.14.4 ([eae690c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/eae690c))
+- **deps-dev:** Bump vitest from 2.1.3 to 2.1.4 ([7dc3af8](https://github.com/manchenkoff/nuxt-laravel-echo/commit/7dc3af8))
+- **deps-dev:** Bump @nuxt/eslint-config from 0.6.0 to 0.6.1 ([115ade7](https://github.com/manchenkoff/nuxt-laravel-echo/commit/115ade7))
+- **deps-dev:** Bump vue-tsc from 2.1.6 to 2.1.10 ([b08b150](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b08b150))
+- **deps-dev:** Bump @types/node from 22.7.7 to 22.8.7 ([c2077cd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/c2077cd))
+- **deps-dev:** Bump eslint from 9.13.0 to 9.14.0 ([d69529f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d69529f))
+- **deps-dev:** Bump nuxt from 3.13.2 to 3.14.159 ([00c2d69](https://github.com/manchenkoff/nuxt-laravel-echo/commit/00c2d69))
+- **deps-dev:** Bump @nuxt/schema from 3.13.2 to 3.14.159 ([16225da](https://github.com/manchenkoff/nuxt-laravel-echo/commit/16225da))
+- **deps-dev:** Bump @types/node from 22.8.7 to 22.9.0 ([8d8f006](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8d8f006))
+- **deps-dev:** Bump @nuxt/eslint-config from 0.6.1 to 0.7.0 ([06232b7](https://github.com/manchenkoff/nuxt-laravel-echo/commit/06232b7))
+- **deps-dev:** Bump vitest from 2.1.4 to 2.1.5 ([5c7dd75](https://github.com/manchenkoff/nuxt-laravel-echo/commit/5c7dd75))
+- **deps-dev:** Bump eslint from 9.14.0 to 9.15.0 ([7238ff8](https://github.com/manchenkoff/nuxt-laravel-echo/commit/7238ff8))
+- Install @typescript-eslint with a fix ([a794e58](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a794e58))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  New laravel-echo typing system ([113e962](https://github.com/manchenkoff/nuxt-laravel-echo/commit/113e962))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+
 ## v0.1.0
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.0.13...v0.1.0)
