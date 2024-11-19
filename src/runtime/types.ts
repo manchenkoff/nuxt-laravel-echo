@@ -1,3 +1,5 @@
+export type SupportedBroadcaster = 'reverb' | 'pusher'
+
 export interface Authentication {
   /**
    * The base URL of Laravel application.
@@ -36,7 +38,7 @@ export interface ModuleOptions {
    * The Laravel broadcaster type to use.
    * @default 'reverb'
    */
-  broadcaster: 'reverb' | 'pusher'
+  broadcaster: SupportedBroadcaster
   /**
    * The host to connect to WebSocket.
    * @default 'localhost'
