@@ -1,5 +1,5 @@
 import { unref } from 'vue'
-import type { TokenStorage } from '~/src/runtime/types'
+import type { TokenStorage } from '../types/config'
 import { useCookie, type NuxtApp } from '#app'
 
 const cookieTokenKey = 'sanctum.token.cookie'

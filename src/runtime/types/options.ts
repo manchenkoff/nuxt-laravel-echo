@@ -29,10 +29,6 @@ export interface Authentication {
    * @default 'X-XSRF-TOKEN'
    */
   csrfHeader?: string
-  /**
-   * Token storage handlers to be used by the client.
-   */
-  tokenStorage?: TokenStorage
 }
 
 export interface ModuleOptions {
@@ -94,15 +90,4 @@ export interface ModuleOptions {
    * @default undefined
    */
   properties?: object
-}
-
-export interface TokenStorage {
-  /**
-   * Function to load a token from the storage.
-   */
-  get: (app: NuxtApp) => Promise<string | undefined>
-  /**
-   * Function to save a token to the storage.
-   */
-  set: (app: NuxtApp, token?: string) => Promise<void>
 }
