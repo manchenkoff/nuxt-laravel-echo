@@ -1,3 +1,5 @@
+export type SupportedBroadcaster = 'reverb' | 'pusher'
+
 export interface Authentication {
   /**
    * Authentication mode 'cookie' or 'token'
@@ -41,7 +43,7 @@ export interface ModuleOptions {
    * The Laravel broadcaster type to use.
    * @default 'reverb'
    */
-  broadcaster: 'reverb' | 'pusher'
+  broadcaster: SupportedBroadcaster
   /**
    * The host to connect to WebSocket.
    * @default 'localhost'

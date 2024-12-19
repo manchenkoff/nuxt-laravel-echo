@@ -4,7 +4,7 @@ import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/opt
 import { type ConsolaInstance, createConsola } from 'consola'
 import type { FetchOptions } from 'ofetch'
 import { useEchoConfig } from './composables/useEchoConfig'
-import type { Authentication, ModuleOptions } from './types/options'
+import type { Authentication, ModuleOptions, SupportedBroadcaster } from './types/options'
 import { useEchoAppConfig } from './composables/useEchoAppConfig'
 import { createError, defineNuxtPlugin, useCookie, updateAppConfig, type NuxtApp } from '#app'
 
@@ -13,7 +13,7 @@ const Pusher = (PusherPkg as any).default || PusherPkg
 
 declare global {
   interface Window {
-    Echo: Echo
+    Echo: Echo<SupportedBroadcaster>
     Pusher: typeof Pusher
   }
 }
