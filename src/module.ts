@@ -6,7 +6,8 @@ import {
   addImportsDir,
 } from '@nuxt/kit'
 import { defu } from 'defu'
-import type { ModuleOptions } from './runtime/types'
+import type { ModuleOptions } from './runtime/types/options'
+import { registerTypeTemplates } from './templates'
 
 const MODULE_NAME = 'nuxt-laravel-echo'
 
@@ -19,6 +20,7 @@ const defaultModuleOptions: ModuleOptions = {
   scheme: 'https',
   transports: ['ws', 'wss'],
   authentication: {
+    mode: 'cookie',
     baseUrl: 'http://localhost:80',
     authEndpoint: '/broadcasting/auth',
     csrfEndpoint: '/sanctum/csrf-cookie',
@@ -49,6 +51,8 @@ export default defineNuxtModule<ModuleOptions>({
 
     addPlugin(resolver.resolve('./runtime/plugin.client'))
     addImportsDir(resolver.resolve('./runtime/composables'))
+
+    registerTypeTemplates(resolver)
 
     logger.info('Laravel Echo module initialized!')
   },

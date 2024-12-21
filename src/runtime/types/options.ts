@@ -2,6 +2,11 @@ export type SupportedBroadcaster = 'reverb' | 'pusher'
 
 export interface Authentication {
   /**
+   * Authentication mode 'cookie' or 'token'
+   * @default 'cookie'
+   */
+  mode: 'cookie' | 'token'
+  /**
    * The base URL of Laravel application.
    * @default 'http://localhost:80'
    */
