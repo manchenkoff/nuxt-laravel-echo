@@ -1,6 +1,43 @@
 # Changelog
 
 
+## v0.2.1
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.0...v0.2.1)
+
+### 🚀 Enhancements
+
+- Add support for token authentication mode ([392a7c5](https://github.com/manchenkoff/nuxt-laravel-echo/commit/392a7c5))
+
+### 🩹 Fixes
+
+- Add sanctum token auth ([9b6f061](https://github.com/manchenkoff/nuxt-laravel-echo/commit/9b6f061))
+- Add tokenStorage parameter into types ([65efc1a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/65efc1a))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump nuxt from 3.14.159 to 3.14.1592 ([21aaee5](https://github.com/manchenkoff/nuxt-laravel-echo/commit/21aaee5))
+- **deps-dev:** Bump @nuxt/schema from 3.14.159 to 3.14.1592 ([250b87d](https://github.com/manchenkoff/nuxt-laravel-echo/commit/250b87d))
+- **deps-dev:** Bump @types/node from 22.9.0 to 22.9.3 ([928b7af](https://github.com/manchenkoff/nuxt-laravel-echo/commit/928b7af))
+- **deps-dev:** Bump @nuxt/devtools from 1.6.0 to 1.6.1 ([122220f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/122220f))
+- **deps-dev:** Bump @nuxt/eslint-config from 0.7.0 to 0.7.2 ([fc530d4](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fc530d4))
+- **deps-dev:** Bump eslint from 9.15.0 to 9.16.0 ([e145037](https://github.com/manchenkoff/nuxt-laravel-echo/commit/e145037))
+- **deps-dev:** Bump vitest from 2.1.5 to 2.1.8 ([a030ddf](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a030ddf))
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin ([19f0489](https://github.com/manchenkoff/nuxt-laravel-echo/commit/19f0489))
+- **deps-dev:** Bump @types/node from 22.9.3 to 22.10.1 ([ddcbc60](https://github.com/manchenkoff/nuxt-laravel-echo/commit/ddcbc60))
+- **deps-dev:** Bump @nuxt/test-utils from 3.14.4 to 3.15.1 ([01f8535](https://github.com/manchenkoff/nuxt-laravel-echo/commit/01f8535))
+- **deps-dev:** Bump @nuxt/devtools from 1.6.1 to 1.6.3 ([61374fd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/61374fd))
+- **deps-dev:** Bump @types/node from 22.10.1 to 22.10.2 ([095a12e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/095a12e))
+- **deps-dev:** Bump eslint from 9.16.0 to 9.17.0 ([28e2f1d](https://github.com/manchenkoff/nuxt-laravel-echo/commit/28e2f1d))
+- **deps-dev:** Bump @nuxt/devtools from 1.6.3 to 1.6.4 ([551db6c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/551db6c))
+- **deps-dev:** Bump @nuxt/eslint-config from 0.7.2 to 0.7.3 ([741af10](https://github.com/manchenkoff/nuxt-laravel-echo/commit/741af10))
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin ([24a505f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/24a505f))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](http://github.com/manchenkoff))
+- Kirill Petrov <ins@allnight.ru>
+
 ## v0.2.0
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.1.0...v0.2.0)
