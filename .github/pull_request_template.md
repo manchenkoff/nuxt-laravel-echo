@@ -5,9 +5,3 @@ A clear and concise description of what was fixed or implemented.
 **Additional context**
 
 Add any other context or screenshots about the feature request here.
-
-**Checklist:**
-
-- [ ] Code style, linters and tests are passing
-- [ ] Backwards compatibility is maintained
-- [ ] Documentation is updated
