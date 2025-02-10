@@ -39,26 +39,26 @@
     "validate": "npm run lint && npm run test:types && npm run test"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.13.0",
     "defu": "^6.1.4",
-    "laravel-echo": "^1.16.1",
-    "ofetch": "^1.4.0",
+    "laravel-echo": "^1.19.0",
+    "ofetch": "^1.4.1",
     "pusher-js": "8.4.0-rc2"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.4.1",
-    "@nuxt/eslint-config": "^0.7.0",
-    "@nuxt/module-builder": "^0.8.3",
-    "@nuxt/schema": "^3.13.0",
-    "@nuxt/test-utils": "^3.14.1",
-    "@types/node": "^22.5.1",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "changelogen": "^0.5.5",
-    "eslint": "^9.9.1",
-    "nuxt": "^3.13.2",
-    "typescript": "^5.5.4",
-    "vitest": "^2.0.5",
-    "vue-tsc": "^2.1.2"
+    "@nuxt/devtools": "^1.7.0",
+    "@nuxt/eslint-config": "^0.7.6",
+    "@nuxt/kit": "^3.15.4",
+    "@nuxt/module-builder": "^0.8.4",
+    "@nuxt/schema": "^3.15.4",
+    "@nuxt/test-utils": "^3.15.4",
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "changelogen": "^0.5.7",
+    "eslint": "^9.20.0",
+    "nuxt": "^3.15.4",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.9",
+    "vue-tsc": "^2.1.10"
   },
-  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
+  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92"
 }
