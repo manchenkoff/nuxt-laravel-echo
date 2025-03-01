@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "defu": "^6.1.4",
-    "laravel-echo": "^1.19.0",
+    "laravel-echo": "^2.0.2",
     "ofetch": "^1.4.1",
     "pusher-js": "8.4.0-rc2"
   },

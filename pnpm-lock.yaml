@@ -15,8 +15,8 @@ importers:
         specifier: ^6.1.4
         version: 6.1.4
       laravel-echo:
-        specifier: ^1.19.0
-        version: 1.19.0
+        specifier: ^2.0.2
+        version: 2.0.2
       ofetch:
         specifier: ^1.4.1
         version: 1.4.1
@@ -2441,9 +2441,9 @@ packages:
   kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
 
-  laravel-echo@1.19.0:
-    resolution: {integrity: sha512-o/X4XH8BIRwij66PSjtotZfM88Z8g/4P3gzxQf2BTcZBKmGqucvI5JYYLprR2OZQ9XlGsmJ2v+hDpPGEbXwUWw==}
-    engines: {node: '>=10'}
+  laravel-echo@2.0.2:
+    resolution: {integrity: sha512-Ciai6hA7r35MFqNRb8G034cvm9WiveSTFQQKRGJhWtZGbng7C8BBa5QvqDxk/Mw5GeJ+q19jrEwQhf7r1b1lcg==}
+    engines: {node: '>=20'}
 
   launch-editor@2.10.0:
     resolution: {integrity: sha512-D7dBRJo/qcGX9xlvt/6wUYzQxjh5G1RvZPgPv8vi4KRU99DVQL/oW7tnVOCCTm2HGeo3C5HvGE5Yrh6UBoZ0vA==}
@@ -6889,7 +6889,7 @@ snapshots:
 
   kolorist@1.8.0: {}
 
-  laravel-echo@1.19.0: {}
+  laravel-echo@2.0.2: {}
 
   launch-editor@2.10.0:
     dependencies:
