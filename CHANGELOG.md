@@ -1,6 +1,37 @@
 # Changelog
 
 
+## v0.2.2
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.1...v0.2.2)
+
+### 🩹 Fixes
+
+- Use npm keys directly ([4aea843](https://github.com/manchenkoff/nuxt-laravel-echo/commit/4aea843))
+- Use npm keys directly in release ([f154e8c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/f154e8c))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @nuxt/devtools from 1.6.4 to 1.7.0 ([a6376f8](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a6376f8))
+- **deps-dev:** Bump @types/node from 22.10.2 to 22.10.3 ([c86d447](https://github.com/manchenkoff/nuxt-laravel-echo/commit/c86d447))
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin ([98e3e68](https://github.com/manchenkoff/nuxt-laravel-echo/commit/98e3e68))
+- **deps-dev:** Bump nuxt from 3.14.1592 to 3.15.0 ([0a6f8c1](https://github.com/manchenkoff/nuxt-laravel-echo/commit/0a6f8c1))
+- **deps-dev:** Bump @nuxt/test-utils from 3.15.1 to 3.15.4 ([8248584](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8248584))
+- **deps-dev:** Bump eslint from 9.17.0 to 9.19.0 ([e4150f9](https://github.com/manchenkoff/nuxt-laravel-echo/commit/e4150f9))
+- **deps-dev:** Bump @nuxt/schema from 3.15.0 to 3.15.4 ([46bef32](https://github.com/manchenkoff/nuxt-laravel-echo/commit/46bef32))
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin ([b3ad9cb](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b3ad9cb))
+- **deps-dev:** Bump vitest in the npm_and_yarn group ([49ceadd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/49ceadd))
+- **deps-dev:** Bump @types/node from 22.10.3 to 22.13.1 ([88402e5](https://github.com/manchenkoff/nuxt-laravel-echo/commit/88402e5))
+- Upgraded package versions ([4177170](https://github.com/manchenkoff/nuxt-laravel-echo/commit/4177170))
+- Simplified PR template ([a3a97e8](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a3a97e8))
+- Upgraded nuxt packages ([a576fd5](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a576fd5))
+- **dev-deps:** Upgraded dependencies ([5e1044d](https://github.com/manchenkoff/nuxt-laravel-echo/commit/5e1044d))
+- **deps-dev:** Bump changelogen from 0.5.7 to 0.6.0 ([62b9c1e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/62b9c1e))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.1
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.0...v0.2.1)
