@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.2.3
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.2...v0.2.3)
+
+### 🏡 Chore
+
+- Upgraded nuxt packages ([6f5fd46](https://github.com/manchenkoff/nuxt-laravel-echo/commit/6f5fd46))
+- Override for esbuild vulnerability ([21660b1](https://github.com/manchenkoff/nuxt-laravel-echo/commit/21660b1))
+- Removed override for esbuild ([e2d2cfc](https://github.com/manchenkoff/nuxt-laravel-echo/commit/e2d2cfc))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.2
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.1...v0.2.2)
