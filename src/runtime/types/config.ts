@@ -1,3 +1,5 @@
+import type { FetchContext } from 'ofetch'
+import type { ConsolaInstance } from 'consola'
 import type { NuxtApp } from '#app'
 
 /**
@@ -15,6 +17,29 @@ export interface TokenStorage {
 }
 
 /**
+ * Request interceptor.
+ */
+export type EchoInterceptor = (
+  app: NuxtApp,
+  ctx: FetchContext,
+  logger: ConsolaInstance
+) => Promise<void>
+
+/**
+ * Interceptors to be used by the ofetch client.
+ */
+export interface EchoInterceptors {
+  /**
+   * Function to execute before sending a request.
+   */
+  onRequest?: EchoInterceptor
+  /**
+   * Function to execute after receiving a response.
+   */
+  onResponse?: EchoInterceptor
+}
+
+/**
  * Echo configuration for the application side with user-defined handlers.
  */
 export interface EchoAppConfig {
@@ -22,4 +47,8 @@ export interface EchoAppConfig {
    * Token storage handlers to be used by the client.
    */
   tokenStorage?: TokenStorage
+  /**
+   * Request interceptors to be used by the client.
+   */
+  interceptors?: EchoInterceptors
 }
