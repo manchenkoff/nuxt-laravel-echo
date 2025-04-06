@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v0.2.4
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.3...v0.2.4)
+
+### 🚀 Enhancements
+
+- **interceptors:** Added support for custom user-defined ofetch interceptors ([fbe90b7](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fbe90b7))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump vite from 6.2.3 to 6.2.4 in the npm_and_yarn group ([f60c179](https://github.com/manchenkoff/nuxt-laravel-echo/commit/f60c179))
+- **deps-dev:** Bump @nuxt/devtools from 2.3.1 to 2.3.2 ([b45ca4b](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b45ca4b))
+- **deps-dev:** Bump @nuxt/eslint-config from 1.2.0 to 1.3.0 ([5bd39f6](https://github.com/manchenkoff/nuxt-laravel-echo/commit/5bd39f6))
+- **deps-dev:** Bump @types/node from 22.13.13 to 22.13.16 ([30dccd9](https://github.com/manchenkoff/nuxt-laravel-echo/commit/30dccd9))
+- **deps-dev:** Bump nuxt from 3.16.1 to 3.16.2 ([31bc195](https://github.com/manchenkoff/nuxt-laravel-echo/commit/31bc195))
+- **deps-dev:** Bump @nuxt/kit from 3.16.1 to 3.16.2 ([1d47692](https://github.com/manchenkoff/nuxt-laravel-echo/commit/1d47692))
+- **deps-dev:** Bump vite from 6.2.4 to 6.2.5 in the npm_and_yarn group ([5654b5c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/5654b5c))
+- **playground:** Added example of echo interceptor ([5829aed](https://github.com/manchenkoff/nuxt-laravel-echo/commit/5829aed))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.3
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.2...v0.2.3)
