@@ -1,5 +1,9 @@
 import { addTypeTemplate, type Resolver } from '@nuxt/kit'
 
+/**
+ * Defines module's type augmentation for Nuxt build
+ * @param resolver
+ */
 export const registerTypeTemplates = (resolver: Resolver) => {
   addTypeTemplate({
     filename: 'types/echo.d.ts',
