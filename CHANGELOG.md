@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.2.5
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.4...v0.2.5)
+
+### 🩹 Fixes
+
+- Throw error on unsupported broadcaster ([6928940](https://github.com/manchenkoff/nuxt-laravel-echo/commit/6928940))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @nuxt/kit from 3.16.2 to 3.17.1 ([ff692ff](https://github.com/manchenkoff/nuxt-laravel-echo/commit/ff692ff))
+- **deps-dev:** Bump nuxt from 3.16.2 to 3.17.1 ([31c4b4c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/31c4b4c))
+- **deps-dev:** Bump @nuxt/devtools from 2.3.2 to 2.4.0 ([fe5eb2c](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fe5eb2c))
+- **deps-dev:** Bump @nuxt/module-builder from 0.8.4 to 1.0.1 ([71607cb](https://github.com/manchenkoff/nuxt-laravel-echo/commit/71607cb))
+- **deps-dev:** Bump vue-tsc from 2.2.8 to 2.2.10 ([2bfdca8](https://github.com/manchenkoff/nuxt-laravel-echo/commit/2bfdca8))
+
+### 🤖 CI
+
+- Added github action permissions ([4751880](https://github.com/manchenkoff/nuxt-laravel-echo/commit/4751880))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.4
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.3...v0.2.4)
