@@ -1,4 +1,4 @@
-export type SupportedBroadcaster = 'reverb' | 'pusher'
+import type { Broadcaster } from 'laravel-echo'
 
 export interface Authentication {
   /**
@@ -43,7 +43,7 @@ export interface ModuleOptions {
    * The Laravel broadcaster type to use.
    * @default 'reverb'
    */
-  broadcaster: SupportedBroadcaster
+  broadcaster: keyof Broadcaster
   /**
    * The host to connect to WebSocket.
    * @default 'localhost'

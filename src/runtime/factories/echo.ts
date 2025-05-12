@@ -1,5 +1,5 @@
 import type { ConsolaInstance } from 'consola'
-import Echo from 'laravel-echo'
+import Echo, { type Broadcaster, type EchoOptions } from 'laravel-echo'
 import type { Channel, ChannelAuthorizationCallback, Options } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import type { Authentication, ModuleOptions } from '../types/options'
@@ -47,7 +47,7 @@ function createAuthorizer(
  * @param config The module options
  * @param logger The logger instance
  */
-function prepareEchoOptions(app: NuxtApp, config: ModuleOptions, logger: ConsolaInstance) {
+function prepareEchoOptions<T extends keyof Broadcaster>(app: NuxtApp, config: ModuleOptions, logger: ConsolaInstance): EchoOptions<T> {
   const forceTLS = config.scheme === 'https'
   const additionalOptions = config.properties || {}
 
@@ -72,21 +72,25 @@ function prepareEchoOptions(app: NuxtApp, config: ModuleOptions, logger: Consola
       forceTLS,
       authorizer,
       ...additionalOptions,
-    }
+    } as EchoOptions<'pusher'>
   }
 
   // Create a Reverb instance
-  return {
-    broadcaster: config.broadcaster,
-    key: config.key,
-    wsHost: config.host,
-    wsPort: config.port,
-    wssPort: config.port,
-    forceTLS,
-    enabledTransports: config.transports,
-    authorizer,
-    ...additionalOptions,
+  if (config.broadcaster === 'reverb') {
+    return {
+      broadcaster: config.broadcaster,
+      key: config.key,
+      wsHost: config.host,
+      wsPort: config.port,
+      wssPort: config.port,
+      forceTLS,
+      enabledTransports: config.transports,
+      authorizer,
+      ...additionalOptions,
+    } as EchoOptions<'reverb'>
   }
+
+  throw new Error(`Unsupported broadcaster: ${config.broadcaster}`)
 }
 
 /**

@@ -1,8 +1,8 @@
 import type Echo from 'laravel-echo'
+import type { Broadcaster } from 'laravel-echo'
 import PusherPkg from 'pusher-js'
 import { type ConsolaInstance, createConsola } from 'consola'
 import { useEchoConfig } from './composables/useEchoConfig'
-import type { SupportedBroadcaster } from './types/options'
 import { useEchoAppConfig } from './composables/useEchoAppConfig'
 import { createEcho } from './factories/echo'
 import { defineNuxtPlugin, updateAppConfig, type NuxtApp } from '#app'
@@ -12,7 +12,7 @@ const Pusher = (PusherPkg as any).default || PusherPkg
 
 declare global {
   interface Window {
-    Echo: Echo<SupportedBroadcaster>
+    Echo: Echo<keyof Broadcaster>
     Pusher: typeof Pusher
   }
 }
@@ -28,7 +28,7 @@ function createEchoLogger(logLevel: number) {
 }
 
 /**
- * Setup default token storage if not defined by the user
+ * Set up default token storage if not defined by the user
  * @param nuxtApp The Nuxt application instance
  * @param logger The logger instance
  */
