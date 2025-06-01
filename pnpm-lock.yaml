@@ -13,7 +13,7 @@ importers:
         version: 6.1.4
       laravel-echo:
         specifier: ^2.1.0
-        version: 2.1.0(pusher-js@8.4.0)(socket.io-client@4.8.1)
+        version: 2.1.4(pusher-js@8.4.0)(socket.io-client@4.8.1)
       ofetch:
         specifier: ^1.4.1
         version: 1.4.1
@@ -2868,8 +2868,8 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  laravel-echo@2.1.0:
-    resolution: {integrity: sha512-SuU2lG+0hfWr4FMpNo4WeuxT3IwB7NI7zaEDrOOsNbHgTYSZY6lwPCBNvSMOfFjIEc9aNx6pRBxHkSWAwxg1UA==}
+  laravel-echo@2.1.4:
+    resolution: {integrity: sha512-+xkI04C7mqPSsp/610i2/6g5wnfnY0BbO4+UvQ55Ryn6H7TPDYloFMg3KF+EfYhtPhHLrTSTbnM/wj8REgMvTw==}
     engines: {node: '>=20'}
     peerDependencies:
       pusher-js: '*'
@@ -7962,7 +7962,7 @@ snapshots:
       dotenv: 16.5.0
       winston: 3.17.0
 
-  laravel-echo@2.1.0(pusher-js@8.4.0)(socket.io-client@4.8.1):
+  laravel-echo@2.1.4(pusher-js@8.4.0)(socket.io-client@4.8.1):
     dependencies:
       pusher-js: 8.4.0
       socket.io-client: 4.8.1
