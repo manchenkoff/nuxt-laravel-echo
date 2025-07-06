@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.2.6
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.5...v0.2.6)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @nuxt/kit from 3.17.3 to 3.17.4 ([2008bc6](https://github.com/manchenkoff/nuxt-laravel-echo/commit/2008bc6))
+- **deps-dev:** Bump @types/node from 22.15.17 to 22.15.29 ([13de480](https://github.com/manchenkoff/nuxt-laravel-echo/commit/13de480))
+- **deps-dev:** Bump @nuxt/eslint-config from 1.3.1 to 1.4.1 ([76c9efc](https://github.com/manchenkoff/nuxt-laravel-echo/commit/76c9efc))
+- **deps-dev:** Bump @nuxt/test-utils from 3.18.0 to 3.19.1 ([11d200a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/11d200a))
+- **deps-dev:** Bump nuxt from 3.17.3 to 3.17.5 ([d2714ed](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d2714ed))
+- **deps-dev:** Bump vitest from 3.1.3 to 3.2.4 ([75cc25e](https://github.com/manchenkoff/nuxt-laravel-echo/commit/75cc25e))
+- **deps-dev:** Bump @types/node from 22.15.29 to 24.0.8 ([46dcf25](https://github.com/manchenkoff/nuxt-laravel-echo/commit/46dcf25))
+- **deps-dev:** Bump @nuxt/devtools from 2.4.0 to 2.6.0 ([43fa262](https://github.com/manchenkoff/nuxt-laravel-echo/commit/43fa262))
+- **deps-dev:** Bump eslint from 9.26.0 to 9.30.0 ([a06a8ca](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a06a8ca))
+- Bump packages and apply formatting ([8a0d8c4](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8a0d8c4))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.5
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.4...v0.2.5)
