@@ -2,7 +2,8 @@ import type { FetchContext } from 'ofetch'
 import type { ConsolaInstance } from 'consola'
 import type { ModuleOptions } from '../types/options'
 import { useEchoAppConfig } from '../composables/useEchoAppConfig'
-import { createError, type NuxtApp } from '#app'
+import { createError } from '#app'
+import type { NuxtApp } from '#app'
 
 /**
  * Sets Authorization header for the request if the token is present.

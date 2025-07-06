@@ -1,10 +1,12 @@
 import type { ConsolaInstance } from 'consola'
-import Echo, { type Broadcaster, type EchoOptions } from 'laravel-echo'
+import Echo from 'laravel-echo'
+import type { Broadcaster, EchoOptions } from 'laravel-echo'
 import type { Channel, ChannelAuthorizationCallback, Options } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import type { Authentication, ModuleOptions } from '../types/options'
 import { createFetchClient } from './http'
-import { createError, type NuxtApp } from '#app'
+import { createError } from '#app'
+import type { NuxtApp } from '#app'
 
 /**
  * Creates an authorizer function for the Echo instance.

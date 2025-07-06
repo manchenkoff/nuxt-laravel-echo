@@ -1,11 +1,13 @@
 import type Echo from 'laravel-echo'
 import type { Broadcaster } from 'laravel-echo'
 import PusherPkg from 'pusher-js'
-import { type ConsolaInstance, createConsola } from 'consola'
+import { createConsola } from 'consola'
+import type { ConsolaInstance } from 'consola'
 import { useEchoConfig } from './composables/useEchoConfig'
 import { useEchoAppConfig } from './composables/useEchoAppConfig'
 import { createEcho } from './factories/echo'
-import { defineNuxtPlugin, updateAppConfig, type NuxtApp } from '#app'
+import { defineNuxtPlugin, updateAppConfig } from '#app'
+import type { NuxtApp } from '#app'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Pusher = (PusherPkg as any).default || PusherPkg
