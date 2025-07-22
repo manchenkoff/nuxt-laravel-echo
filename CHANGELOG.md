@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.7
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.6...v0.2.7)
+
+### 🩹 Fixes
+
+- Bump packages and fixed vulnerability ([a04d7dd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/a04d7dd))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.6
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.5...v0.2.6)
