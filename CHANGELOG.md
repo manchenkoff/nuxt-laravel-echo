@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.2.8
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.7...v0.2.8)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump nuxt from 4.0.1 to 4.0.2 ([fe32085](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fe32085))
+- **deps-dev:** Bump @nuxt/eslint-config from 1.7.0 to 1.7.1 ([b0485fa](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b0485fa))
+- **deps-dev:** Bump eslint from 9.31.0 to 9.32.0 ([2ef1f14](https://github.com/manchenkoff/nuxt-laravel-echo/commit/2ef1f14))
+- **deps-dev:** Bump @nuxt/kit from 4.0.1 to 4.0.2 ([bc030a4](https://github.com/manchenkoff/nuxt-laravel-echo/commit/bc030a4))
+- **deps-dev:** Bump @nuxt/module-builder from 1.0.1 to 1.0.2 ([843fcae](https://github.com/manchenkoff/nuxt-laravel-echo/commit/843fcae))
+- **deps-dev:** Bump nuxt in the npm_and_yarn group across 1 directory ([0d5bcd5](https://github.com/manchenkoff/nuxt-laravel-echo/commit/0d5bcd5))
+
+### 🤖 CI
+
+- Simplify github actions ([f4e9eea](https://github.com/manchenkoff/nuxt-laravel-echo/commit/f4e9eea))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.7
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.6...v0.2.7)
