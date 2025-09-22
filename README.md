@@ -72,3 +72,7 @@ If you want to contribute to this project and make it better, your help is very 
 [license-href]: https://npmjs.com/package/nuxt-laravel-echo
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
+
+### Powered by
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
+
