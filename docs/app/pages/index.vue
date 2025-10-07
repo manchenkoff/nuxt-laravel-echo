@@ -17,7 +17,7 @@ useSeoMeta({
 })
 
 defineOgImageComponent(
-  'Landing',
+  'Docs',
   {
     headline: 'Nuxt Laravel Echo'
   }
