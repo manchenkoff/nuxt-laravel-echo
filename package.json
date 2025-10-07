@@ -28,13 +28,13 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "pnpm lint && pnpm test && pnpm prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
-    "validate": "npm run lint && npm run test:types && npm run test"
+    "validate": "pnpm lint && pnpm test:types && pnpm test"
   },
   "dependencies": {
     "defu": "^6.1.4",
@@ -49,15 +49,15 @@
     "@nuxt/module-builder": "^1.0.2",
     "@nuxt/schema": "^4.1.2",
     "@nuxt/test-utils": "^3.19.2",
-    "@types/node": "^24.6.1",
+    "@types/node": "^24.6.2",
     "changelogen": "^0.6.2",
-    "eslint": "^9.36.0",
+    "eslint": "^9.37.0",
     "nuxt": "^4.1.2",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.1.0"
   },
-  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
+  "packageManager": "pnpm@10.18.0+sha512.e804f889f1cecc40d572db084eec3e4881739f8dec69c0ff10d2d1beff9a4e309383ba27b5b750059d7f4c149535b6cd0d2cb1ed3aeb739239a4284a68f40cfa",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
