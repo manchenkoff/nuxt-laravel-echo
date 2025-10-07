@@ -12,6 +12,10 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  app: {
+    baseURL: '/nuxt-laravel-echo'
+  },
+
   css: ['~/assets/css/main.css'],
 
   content: {

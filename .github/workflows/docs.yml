@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         working-directory: ./docs
         run: npx nypm@latest i
+      - name: Validate
+        working-directory: ./docs
+        run: pnpm validate
       - name: Generate documentation
         run: pnpm generate
         working-directory: ./docs
