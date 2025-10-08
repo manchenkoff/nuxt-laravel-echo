@@ -12,10 +12,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  app: {
-    baseURL: '/nuxt-laravel-echo'
-  },
-
   css: ['~/assets/css/main.css'],
 
   content: {
@@ -54,7 +50,7 @@ export default defineNuxtConfig({
   },
 
   llms: {
-    domain: 'https://manchenkoff.github.com/nuxt-laravel-echo',
+    domain: 'https://echo.manchenkoff.me',
     title: 'Nuxt - Laravel Echo',
     description: 'The only module you need to set up your Laravel Broadcasting for Nuxt application!',
     full: {
