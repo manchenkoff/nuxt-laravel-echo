@@ -7,7 +7,7 @@
 
 Nuxt module for Laravel Echo integration to get a seamless experience with application broadcasting.
 
-- [Documentation](https://manchenkoff.gitbook.io/nuxt-laravel-echo)
+- [Documentation](https://echo.manchenkoff.me)
 - [Features](#features)
 - [Quick Setup](#quick-setup)
 - [Release Notes](/CHANGELOG.md)
