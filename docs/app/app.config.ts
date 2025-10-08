@@ -111,7 +111,7 @@ export default defineAppConfig({
     title: 'Table of Contents',
     bottom: {
       title: 'Ready to contribute?',
-      edit: 'https://github.com/nuxt-ui-templates/docs/edit/main/content',
+      edit: 'https://github.com/manchenkoff/nuxt-laravel-echo/edit/main/docs/content',
       links: [
         {
           icon: 'i-lucide-star',
