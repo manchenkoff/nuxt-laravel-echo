@@ -84,7 +84,7 @@ Features
 #features
   :::u-page-feature
   ---
-  icon: i-lucide-palette
+  icon: i-lucide-user-lock
   ---
   #title
   Sanctum-based
@@ -95,7 +95,7 @@ Features
 
   :::u-page-feature
   ---
-  icon: i-lucide-type
+  icon: i-lucide-cookie
   ---
   #title
   CSRF management
@@ -106,7 +106,7 @@ Features
 
   :::u-page-feature
   ---
-  icon: i-lucide-layers
+  icon: i-lucide-tablet-smartphone
   ---
   #title
   CSR-only
@@ -117,7 +117,7 @@ Features
 
   :::u-page-feature
   ---
-  icon: i-lucide-search
+  icon: i-simple-icons-typescript
   ---
   #title
   TypeScript
@@ -128,7 +128,7 @@ Features
 
   :::u-page-feature
   ---
-  icon: i-lucide-navigation
+  icon: i-lucide-cog
   ---
   #title
   Predefined configuration
@@ -139,7 +139,7 @@ Features
 
   :::u-page-feature
   ---
-  icon: i-lucide-moon
+  icon: i-lucide-git-pull-request
   ---
   #title
   Open-source
