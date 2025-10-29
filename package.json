@@ -39,25 +39,25 @@
   "dependencies": {
     "defu": "^6.1.4",
     "laravel-echo": "^2.2.4",
-    "ofetch": "^1.4.1",
+    "ofetch": "^1.5.0",
     "pusher-js": "^8.4.0"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.6.5",
-    "@nuxt/eslint-config": "^1.9.0",
-    "@nuxt/kit": "^4.1.2",
+    "@nuxt/devtools": "^2.7.0",
+    "@nuxt/eslint-config": "^1.10.0",
+    "@nuxt/kit": "^4.2.0",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.1.2",
-    "@nuxt/test-utils": "^3.19.2",
-    "@types/node": "^24.6.2",
+    "@nuxt/schema": "^4.2.0",
+    "@nuxt/test-utils": "^3.20.1",
+    "@types/node": "^24.9.2",
     "changelogen": "^0.6.2",
-    "eslint": "^9.37.0",
-    "nuxt": "^4.1.2",
+    "eslint": "^9.38.0",
+    "nuxt": "^4.2.0",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
-    "vue-tsc": "^3.1.0"
+    "vue-tsc": "^3.1.2"
   },
-  "packageManager": "pnpm@10.18.0+sha512.e804f889f1cecc40d572db084eec3e4881739f8dec69c0ff10d2d1beff9a4e309383ba27b5b750059d7f4c149535b6cd0d2cb1ed3aeb739239a4284a68f40cfa",
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
