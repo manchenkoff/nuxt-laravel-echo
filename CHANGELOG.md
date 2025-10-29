@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v0.2.9
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.8...v0.2.9)
+
+### 🚀 Enhancements
+
+- Added docs application based on nuxt content ([2b501b2](https://github.com/manchenkoff/nuxt-laravel-echo/commit/2b501b2))
+- Added github action for docs deployment ([32b41fa](https://github.com/manchenkoff/nuxt-laravel-echo/commit/32b41fa))
+
+### 🩹 Fixes
+
+- Use subdir prefix for nuxt docs ([06e9354](https://github.com/manchenkoff/nuxt-laravel-echo/commit/06e9354))
+- Updated docs page icon ([35ea46f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/35ea46f))
+- Use correct og image component name ([17a2ddd](https://github.com/manchenkoff/nuxt-laravel-echo/commit/17a2ddd))
+- Use new domain for docs ([fde7fe3](https://github.com/manchenkoff/nuxt-laravel-echo/commit/fde7fe3))
+- Updated links to new websites ([9a414f0](https://github.com/manchenkoff/nuxt-laravel-echo/commit/9a414f0))
+- Updated Edit link and removed redundant github action ([f97cee6](https://github.com/manchenkoff/nuxt-laravel-echo/commit/f97cee6))
+
+### 🏡 Chore
+
+- Updated icons and fixed typo ([15d77fe](https://github.com/manchenkoff/nuxt-laravel-echo/commit/15d77fe))
+- Added yaml linter configs ([b5d8a3f](https://github.com/manchenkoff/nuxt-laravel-echo/commit/b5d8a3f))
+- **ci:** Trigger docs deployment only if changed ([d5c2553](https://github.com/manchenkoff/nuxt-laravel-echo/commit/d5c2553))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.8
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.7...v0.2.8)
