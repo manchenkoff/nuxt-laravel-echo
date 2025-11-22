@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v0.2.10
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.9...v0.2.10)
+
+### 🏡 Chore
+
+- Added local release pack command ([1239586](https://github.com/manchenkoff/nuxt-laravel-echo/commit/1239586))
+- **deps-dev:** Bump @nuxt/devtools from 2.7.0 to 3.0.1 ([6ed4ab2](https://github.com/manchenkoff/nuxt-laravel-echo/commit/6ed4ab2))
+- **docs:** Updated readme ([ef550eb](https://github.com/manchenkoff/nuxt-laravel-echo/commit/ef550eb))
+- Remove outdated type augmentation ([3d76c4a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/3d76c4a))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.9
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.8...v0.2.9)
