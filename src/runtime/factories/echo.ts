@@ -1,6 +1,6 @@
 import type { ConsolaInstance } from 'consola'
 import Echo from 'laravel-echo'
-import type { Broadcaster, EchoOptions } from 'laravel-echo'
+import type { BroadcastDriver, EchoOptions } from 'laravel-echo'
 import type { Channel, ChannelAuthorizationCallback, Options } from 'pusher-js'
 import type { ChannelAuthorizationData } from 'pusher-js/types/src/core/auth/options'
 import type { Authentication, ModuleOptions } from '../types/options'
@@ -49,7 +49,7 @@ function createAuthorizer(
  * @param config The module options
  * @param logger The logger instance
  */
-function prepareEchoOptions<T extends keyof Broadcaster>(app: NuxtApp, config: ModuleOptions, logger: ConsolaInstance): EchoOptions<T> {
+function prepareEchoOptions(app: NuxtApp, config: ModuleOptions, logger: ConsolaInstance): EchoOptions<BroadcastDriver> {
   const forceTLS = config.scheme === 'https'
   const additionalOptions = config.properties || {}
 

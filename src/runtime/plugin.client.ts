@@ -1,5 +1,5 @@
 import type Echo from 'laravel-echo'
-import type { Broadcaster } from 'laravel-echo'
+import type { BroadcastDriver } from 'laravel-echo'
 import PusherPkg from 'pusher-js'
 import { createConsola } from 'consola'
 import type { ConsolaInstance } from 'consola'
@@ -14,7 +14,7 @@ const Pusher = (PusherPkg as any).default || PusherPkg
 
 declare global {
   interface Window {
-    Echo: Echo<keyof Broadcaster>
+    Echo: Echo<BroadcastDriver>
     Pusher: typeof Pusher
   }
 }

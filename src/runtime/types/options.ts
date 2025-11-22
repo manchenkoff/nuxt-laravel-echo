@@ -1,4 +1,4 @@
-import type { Broadcaster } from 'laravel-echo'
+import type { BroadcastDriver } from 'laravel-echo'
 
 export interface Authentication {
   /**
@@ -43,7 +43,7 @@ export interface ModuleOptions {
    * The Laravel broadcaster type to use.
    * @default 'reverb'
    */
-  broadcaster: keyof Broadcaster
+  broadcaster: BroadcastDriver
   /**
    * The host to connect to WebSocket.
    * @default 'localhost'
