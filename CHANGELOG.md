@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.12
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.11...v0.2.12)
+
+### 🩹 Fixes
+
+- Use new release pipeline workflow ([413b7d2](https://github.com/manchenkoff/nuxt-laravel-echo/commit/413b7d2))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.11
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.10...v0.2.11)
