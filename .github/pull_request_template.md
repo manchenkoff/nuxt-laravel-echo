@@ -1,7 +1,5 @@
-**Is your PR related to a specific issue/feature? Please describe and mention issues.**
+**Describe the problem and solution**
 
-A clear and concise description of what was fixed or implemented.
+Closes #XXX.
 
-**Additional context**
-
-Add any other context or screenshots about the feature request here.
+REPLACE_THIS_WITH_YOUR_DESCRIPTION
