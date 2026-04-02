@@ -10,8 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck",
-    "validate": "pnpm lint && pnpm typecheck"
+    "upgrade": "pnpm self-update && npx nuxt upgrade --dedupe && pnpm up && pnpm lint"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.101",

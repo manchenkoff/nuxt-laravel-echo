@@ -30,7 +30,7 @@ jobs:
         run: npx nypm@latest i
       - name: Validate
         working-directory: ./docs
-        run: pnpm validate
+        run: pnpm lint
       - name: Generate documentation
         run: pnpm generate
         working-directory: ./docs

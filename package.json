@@ -36,7 +36,7 @@
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
     "validate": "pnpm lint && pnpm test:types && pnpm test",
-    "release": "pnpm lint && pnpm test && pnpm prepack && changelogen --release && npm publish && git push --follow-tags"
+    "upgrade": "pnpm self-update && npx nuxt upgrade --dedupe && pnpm up && pnpm dev:prepare && pnpm validate"
   },
   "dependencies": {
     "defu": "^6.1.4",
