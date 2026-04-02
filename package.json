@@ -39,10 +39,10 @@
     "upgrade": "pnpm self-update && npx nuxt upgrade --dedupe && pnpm up && pnpm dev:prepare && pnpm validate"
   },
   "dependencies": {
-    "defu": "^6.1.4",
+    "defu": "^6.1.6",
     "laravel-echo": "^2.3.3",
     "ofetch": "^1.5.1",
-    "pusher-js": "^8.4.3"
+    "pusher-js": "^8.5.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^3.2.4",
