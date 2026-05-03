@@ -9,6 +9,6 @@
     "upgrade": "pnpm self-update && npx nuxt upgrade --dedupe && pnpm up"
   },
   "dependencies": {
-    "nuxt": "^4.4.2"
+    "nuxt": "^4.4.4"
   }
 }
