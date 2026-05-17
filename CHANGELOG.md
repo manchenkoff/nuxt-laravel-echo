@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v1.0.0
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.12...v1.0.0)
+
+### 🏡 Chore
+
+- **ci:** Upgraded action versions ([66cd25a](https://github.com/manchenkoff/nuxt-laravel-echo/commit/66cd25a))
+- **test:** Removed old test files ([12d06d5](https://github.com/manchenkoff/nuxt-laravel-echo/commit/12d06d5))
+- **test:** Added unit and nuxt tests for module ([8336ffe](https://github.com/manchenkoff/nuxt-laravel-echo/commit/8336ffe))
+- **test:** Added e2e tests for module ([ce6b568](https://github.com/manchenkoff/nuxt-laravel-echo/commit/ce6b568))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v0.2.12
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.11...v0.2.12)

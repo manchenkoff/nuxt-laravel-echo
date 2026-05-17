@@ -1,6 +1,6 @@
 {
   "name": "nuxt-laravel-echo",
-  "version": "0.2.12",
+  "version": "1.0.0",
   "author": {
     "name": "Artem Manchenkov",
     "email": "artem@manchenkoff.me",
@@ -29,7 +29,8 @@
     "rc": "pnpm pack --pack-destination dist",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground && pnpm fixtures:prepare",
+    "fixtures:prepare": "for d in test/fixtures/*/; do nuxi prepare \"$d\"; done",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
@@ -47,20 +48,24 @@
   "devDependencies": {
     "@nuxt/devtools": "^3.2.4",
     "@nuxt/eslint-config": "^1.15.2",
-    "@nuxt/kit": "^4.4.4",
+    "@nuxt/kit": "^4.4.5",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.4.4",
+    "@nuxt/schema": "^4.4.5",
     "@nuxt/test-utils": "^4.0.3",
-    "@types/node": "^25.6.2",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.8.0",
+    "@vue/test-utils": "^2.4.10",
     "changelogen": "^0.6.2",
     "eslint": "^10.3.0",
-    "nuxt": "^4.4.4",
+    "h3": "^1.15.11",
+    "happy-dom": "^20.9.0",
+    "nuxt": "^4.4.5",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.5",
+    "vitest": "^4.1.6",
     "vue": "^3.5.34",
-    "vue-tsc": "^3.2.8"
+    "vue-tsc": "^3.2.9"
   },
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@11.1.2",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
