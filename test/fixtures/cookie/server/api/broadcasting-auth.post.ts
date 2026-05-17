@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
   }
 
-  const body = await readBody<{ socket_id: string; channel_name: string }>(event)
+  const body = await readBody<{ socket_id: string, channel_name: string }>(event)
 
   if (!body.socket_id || !body.channel_name) {
     setResponseStatus(event, 422)
