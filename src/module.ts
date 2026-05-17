@@ -8,27 +8,11 @@ import {
 import { defu } from 'defu'
 import type { ModuleOptions } from './runtime/types/options'
 import { registerTypeTemplates } from './templates'
+import { defaultModuleOptions } from './config'
 
 const MODULE_NAME = 'nuxt-laravel-echo'
 
-export type ModulePublicRuntimeConfig = { echo: ModuleOptions }
-
-const defaultModuleOptions: ModuleOptions = {
-  broadcaster: 'reverb',
-  host: 'localhost',
-  port: 8080,
-  scheme: 'https',
-  transports: ['ws', 'wss'],
-  authentication: {
-    mode: 'cookie',
-    baseUrl: 'http://localhost:80',
-    authEndpoint: '/broadcasting/auth',
-    csrfEndpoint: '/sanctum/csrf-cookie',
-    csrfCookie: 'XSRF-TOKEN',
-    csrfHeader: 'X-XSRF-TOKEN',
-  },
-  logLevel: 3,
-}
+export type ModulePublicRuntimeConfig = { echo: Partial<ModuleOptions> }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
