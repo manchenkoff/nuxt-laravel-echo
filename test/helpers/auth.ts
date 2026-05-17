@@ -1,21 +1,23 @@
 import { createPage, url, type NuxtPage } from '@nuxt/test-utils/e2e'
-import { selectors } from './selectors'
+
+function base64(value: string): string {
+  return Buffer.from(value).toString('base64')
+}
 
 export async function actAsGuest(route: string = '/'): Promise<NuxtPage> {
-  const page = await createPage(url(route))
-  return page
+  return await createPage(url(route))
 }
 
 export async function actAsUser(route: string = '/'): Promise<NuxtPage> {
-  const page = await createPage('/login')
+  const page = await createPage(url('/'))
 
-  await page.fill(selectors.login.email, 'john@doe.com')
-  await page.fill(selectors.login.password, 'password')
+  await page.context().addCookies([
+    { name: 'laravel_session', value: base64('1'), url: url('/') },
+  ])
 
-  await page.click(selectors.login.submit)
-  await page.waitForURL('**/profile')
-
-  await page.goto(url(route))
+  if (route !== '/') {
+    await page.goto(url(route))
+  }
 
   return page
 }
