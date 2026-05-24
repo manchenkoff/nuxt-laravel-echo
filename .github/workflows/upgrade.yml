@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [".", "docs", "playground"]
+        project: [".", "docs"]
     steps:
       - name: Checkout
         uses: actions/checkout@v6

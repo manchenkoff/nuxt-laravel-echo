@@ -13,6 +13,18 @@ ignoredBuiltDependencies:
   - unrs-resolver
   - vue-demi
 
+minimumReleaseAgeExclude:
+  - '@takumi-rs/core-darwin-arm64@1.5.0'
+  - '@takumi-rs/core-darwin-x64@1.5.0'
+  - '@takumi-rs/core-linux-arm64-gnu@1.5.0'
+  - '@takumi-rs/core-linux-arm64-musl@1.5.0'
+  - '@takumi-rs/core-linux-x64-gnu@1.5.0'
+  - '@takumi-rs/core-linux-x64-musl@1.5.0'
+  - '@takumi-rs/core-win32-arm64-msvc@1.5.0'
+  - '@takumi-rs/core-win32-x64-msvc@1.5.0'
+  - '@takumi-rs/core@1.5.0'
+  - '@takumi-rs/helpers@1.5.0'
+
 onlyBuiltDependencies:
   - better-sqlite3
   - sharp
