@@ -46,7 +46,7 @@
     "pusher-js": "^8.5.0"
   },
   "devDependencies": {
-    "@nuxt/devtools": "4.0.0-alpha.4",
+    "@nuxt/devtools": "4.0.0-alpha.7",
     "@nuxt/eslint-config": "^1.15.2",
     "@nuxt/kit": "^4.4.6",
     "@nuxt/module-builder": "^1.0.2",
