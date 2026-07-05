@@ -63,7 +63,7 @@
     "typescript": "^6.0.3",
     "vitest": "^4.1.9",
     "vue": "^3.5.39",
-    "vue-tsc": "^3.3.5"
+    "vue-tsc": "^3.3.6"
   },
   "packageManager": "pnpm@11.1.2",
   "pnpm": {
