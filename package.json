@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "defu": "^6.1.7",
-    "laravel-echo": "^2.3.7",
+    "laravel-echo": "^2.4.0",
     "ofetch": "^1.5.1",
     "pusher-js": "^8.5.0"
   },
@@ -62,7 +62,7 @@
     "nuxt": "^4.4.8",
     "typescript": "^6.0.3",
     "vitest": "^4.1.10",
-    "vue": "^3.5.39",
+    "vue": "^3.5.40",
     "vue-tsc": "^3.3.7"
   },
   "packageManager": "pnpm@11.1.2",
