@@ -65,7 +65,7 @@
     "vue": "^3.5.40",
     "vue-tsc": "^3.3.9"
   },
-  "packageManager": "pnpm@11.1.2",
+  "packageManager": "pnpm@11.20.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
