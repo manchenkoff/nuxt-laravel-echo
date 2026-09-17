@@ -30,6 +30,16 @@ export default defineNuxtModule<ModuleOptions>({
       _options
     )
 
+    _nuxt.options.vite = _nuxt.options.vite || {}
+    _nuxt.options.vite.optimizeDeps = _nuxt.options.vite.optimizeDeps || {}
+    _nuxt.options.vite.optimizeDeps.include = _nuxt.options.vite.optimizeDeps.include || []
+
+    for (const dep of ['pusher-js', 'laravel-echo']) {
+      if (!_nuxt.options.vite.optimizeDeps.include.includes(dep)) {
+        _nuxt.options.vite.optimizeDeps.include.push(dep)
+      }
+    }
+
     addPlugin(resolver.resolve('./runtime/plugin.client'))
     addImportsDir(resolver.resolve('./runtime/composables'))
 
