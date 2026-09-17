@@ -1,6 +1,33 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v1.0.0...v1.0.1)
+
+### 🩹 Fixes
+
+- Adjust Pusher library loading for compatibility with Vite 8 ([#323](https://github.com/manchenkoff/nuxt-laravel-echo/pull/323))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump nuxt from 4.4.5 to 4.4.6 in the npm_and_yarn group across 1 directory ([#268](https://github.com/manchenkoff/nuxt-laravel-echo/pull/268))
+- **ci:** Explicit workspace dependencies ([929cd38](https://github.com/manchenkoff/nuxt-laravel-echo/commit/929cd38))
+- **deps-dev:** Bump vitest from 4.1.7 to 4.1.8 ([#278](https://github.com/manchenkoff/nuxt-laravel-echo/pull/278))
+- **deps-dev:** Bump @nuxt/devtools from 4.0.0-alpha.4 to 4.0.0-alpha.7 ([#279](https://github.com/manchenkoff/nuxt-laravel-echo/pull/279))
+- **deps-dev:** Bump @nuxt/schema from 4.4.6 to 4.4.7 ([#280](https://github.com/manchenkoff/nuxt-laravel-echo/pull/280))
+- **deps-dev:** Bump @nuxt/kit from 4.4.6 to 4.4.7 ([#282](https://github.com/manchenkoff/nuxt-laravel-echo/pull/282))
+- **deps-dev:** Bump @types/node from 25.9.4 to 26.1.0 ([#292](https://github.com/manchenkoff/nuxt-laravel-echo/pull/292))
+- **deps-dev:** Bump vue-tsc from 3.3.5 to 3.3.6 ([#293](https://github.com/manchenkoff/nuxt-laravel-echo/pull/293))
+- **deps-dev:** Bump @nuxt/devtools from 4.0.0-alpha.7 to 4.0.0-alpha.9 ([#304](https://github.com/manchenkoff/nuxt-laravel-echo/pull/304))
+- Fixed docs pipeline ([af01f98](https://github.com/manchenkoff/nuxt-laravel-echo/commit/af01f98))
+- **deps-dev:** Bump @nuxt/devtools from 4.0.0-alpha.9 to 4.0.0-alpha.15 ([#317](https://github.com/manchenkoff/nuxt-laravel-echo/pull/317))
+
+### ❤️ Contributors
+
+- Artem Manchenkov ([@manchenkoff](https://github.com/manchenkoff))
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v1.0.0
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v0.2.12...v1.0.0)
