@@ -15,10 +15,22 @@ declare module 'nuxt/schema' {
     interface AppConfig {
         echo?: EchoAppConfig;
     }
+    interface AppConfigInput {
+        echo?: EchoAppConfig;
+    }
+    interface CustomAppConfig {
+        echo?: EchoAppConfig;
+    }
 }
 
 declare module '@nuxt/schema' {
+    interface AppConfig {
+        echo?: EchoAppConfig;
+    }
     interface AppConfigInput {
+        echo?: EchoAppConfig;
+    }
+    interface CustomAppConfig {
         echo?: EchoAppConfig;
     }
 }
