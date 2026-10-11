@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v1.0.1...v1.0.2)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @nuxt/devtools from 4.0.0-alpha.15 to 4.0.0-beta.2 ([#328](https://github.com/manchenkoff/nuxt-laravel-echo/pull/328))
+- **deps-dev:** Bump vitest from 4.1.11 to 5.0.2 ([#329](https://github.com/manchenkoff/nuxt-laravel-echo/pull/329))
+- Upgraded deps ([0245a42](https://github.com/manchenkoff/nuxt-laravel-echo/commit/0245a42))
+
+### ❤️ Contributors
+
+- Manchenkoff ([@manchenkoff](https://github.com/manchenkoff))
+
 ## v1.0.1
 
 [compare changes](https://github.com/manchenkoff/nuxt-laravel-echo/compare/v1.0.0...v1.0.1)
