@@ -58,7 +58,7 @@
     "changelogen": "^0.6.2",
     "eslint": "^10.13.0",
     "h3": "^1.15.11",
-    "happy-dom": "^20.14.6",
+    "happy-dom": "^21.0.4",
     "nuxt": "^4.6.2",
     "typescript": "^6.0.3",
     "vitest": "^5.0.5",
