@@ -54,15 +54,15 @@
     "@nuxt/test-utils": "^4.4.0",
     "@playwright/test": "^1.65.1",
     "@types/node": "^26.6.6",
-    "@vue/test-utils": "^2.5.1",
+    "@vue/test-utils": "^2.6.0",
     "changelogen": "^0.6.2",
     "eslint": "^10.15.0",
     "h3": "^2.0.8",
     "happy-dom": "^21.0.4",
     "nuxt": "^4.6.4",
     "typescript": "^6.0.3",
-    "vitest": "^5.1.0",
-    "vue": "^3.5.45",
+    "vitest": "^5.1.1",
+    "vue": "^3.5.46",
     "vue-tsc": "^3.3.14"
   },
   "packageManager": "pnpm@11.20.0"
